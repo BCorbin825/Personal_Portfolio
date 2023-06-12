@@ -1,4 +1,104 @@
+/* ----------------------------------- Styling ----------------------------------- */
 * {
     margin: 0;
     padding: 0;
+  }
+  
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #1f2435 0%, #1d2635 100%);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    max-width: 2560px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------- Top Bar Section ------------- */
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(29, 38, 53, 0.8);
+    backdrop-filter: blur(5px);
+    color: white;
+    width: 100%;
+    padding: 1% 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    padding-left: 10%;
+}
+
+#navbar {
+    padding-right: 10%;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ------------- Welcome Section ------------- */
+#welcome-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+#welcome-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 6vw;
+    gap: 1vh;
+}
+
+#welcome-content h1 {
+    font-size: 6rem;
+    color: #88c3ff;
+    text-shadow: 0 0 5px rgba(6, 124, 242, 1), 0 0 10px rgba(6, 124, 242, 1);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+#welcome-content h2 {
+    font-size: 2.3rem;
+}
+
+#welcome-content h4 {
+    font-size: 2.3rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+}
+
+
+/* ---------------------------------- Animations ---------------------------------- */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(6, 124, 242, 0.8), 0 0 10px rgba(6, 124, 242, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(6, 124, 242, 0.8), 0 0 20px rgba(6, 124, 242, 0.8);
+    }
 }
