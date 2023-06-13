@@ -1,20 +1,34 @@
+/* ---------------------------------- Variables ---------------------------------- */
+:root {
+    --highlight-text-color: #77c3ee;
+    --glow-color: rgba(6, 124, 242, 1);
+}
+
+
 /* ----------------------------------- Styling ----------------------------------- */
 * {
     margin: 0;
     padding: 0;
+    color: white;
   }
   
 body {
     background: radial-gradient(50% 50% at 50% 50%, #1f2435 0%, #1d2635 100%);
     background-repeat: no-repeat; 
     background-size: cover;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     max-width: 2560px;
     overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+.glow {
+    color: var(--highlight-text-color);
+    text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color);
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 /* ------------- Top Bar Section ------------- */
@@ -29,7 +43,7 @@ header {
     backdrop-filter: blur(5px);
     color: white;
     width: 100%;
-    padding: 1% 0;
+    padding: 0.5vh 0;
     z-index: 9999;
 }
 
@@ -50,11 +64,11 @@ header h1 {
 }
 
 .nav-link:hover {
-    transform: translateY(-8px);
+    color: var(--highlight-text-color);
 }
 
 
-/* ------------- Welcome Section ------------- */
+/* ------------- Home Section ------------- */
 #welcome-section {
     display: flex;
     justify-content: flex-start;
@@ -67,14 +81,10 @@ header h1 {
     flex-direction: column;
     color: white;
     padding-left: 6vw;
-    gap: 1vh;
 }
 
 #welcome-content h1 {
     font-size: 6rem;
-    color: #88c3ff;
-    text-shadow: 0 0 5px rgba(6, 124, 242, 1), 0 0 10px rgba(6, 124, 242, 1);
-    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 #welcome-content h2 {
@@ -91,6 +101,85 @@ header h1 {
     align-items: center;
     width: 4rem;
 }
+
+
+/* ------------- About Section ------------- */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#about-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#portrait-container {
+    transform: scale(0.7);
+}
+
+#portrait-container img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(31, 36, 53, 0.2);
+}
+
+#about-content h1 {
+    font-size: 6rem;
+}
+
+#about-content h3 {
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+    transform: translateY(-15px);
+}
+
+#about-content p {
+    font-size: 1.5rem;
+}
+
+
+/* ------------ Projects Section ------------ */
+#projects {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-content h1 {
+    font-size: 4.5rem;
+    padding-bottom: 3vh;
+}
+
+#project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#project-list li {
+    list-style: none;
+    width: 600px;
+    height: 325px;
+    padding-bottom: 3vh;
+}
+
+#project-list li img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 /* ---------------------------------- Animations ---------------------------------- */
