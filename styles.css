@@ -2,7 +2,7 @@
 
 /* ---------------------------------- Variables ---------------------------------- */
 :root {
-    --highlight-text-color: #77c3ee;
+    --highlight-text-color: #94caf6;
     --glow-color: rgba(6, 124, 242, 1);
 }
 
@@ -28,6 +28,9 @@ a {
 }
 
 .glow {
+    /* background-image: linear-gradient(to bottom right, var(--highlight-text-color), #8403ab);
+    -webkit-background-clip: text;
+    color: transparent; */
     color: var(--highlight-text-color);
     text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color);
     animation: glow 2s ease-in-out infinite alternate;
@@ -41,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: rgba(29, 38, 53, 0.8);
+    background: rgba(29, 38, 53, 0.1);
     backdrop-filter: blur(5px);
     color: white;
     width: 100%;
@@ -72,7 +75,19 @@ header h1 {
 
 
 /* ------------- Home Section ------------- */
-#welcome-section {
+#welcome::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Images/background3.jpg');
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
+#welcome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +99,6 @@ header h1 {
     flex-direction: column;
     align-items: center;
     color: white;
-    /* padding-left: 6vw; */
 }
 
 #welcome-content h1 {
@@ -108,11 +122,26 @@ header h1 {
 
 
 /* ------------- About Section ------------- */
+#about::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Images/background1.jpg');
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
 #about {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* background-image: url('Images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 #about-content {
@@ -148,11 +177,26 @@ header h1 {
 
 
 /* ------------ Projects Section ------------ */
+#projects::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Images/background2.jpg');
+    z-index: -1;
+    filter: brightness(0.5) contrast(110%);
+}
+
 #projects {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: url('Images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 #project-content {
