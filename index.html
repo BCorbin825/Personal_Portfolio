@@ -7,6 +7,8 @@
     <title>Brandon Corbin Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <!-------- Top bar -------->
@@ -25,12 +27,8 @@
     <section id="welcome-section">
       <div id="welcome-content">
         <h4>Hello, my name is</h4>
-        <h1 class="glow">Brandon Corbin</h1>
-        <h2>I am a <span class="glow">Software Developer</span></h2>
-        <div class="social-media">
-            <a href="#"><box-icon type='logo' name='github'></box-icon></a>
-            <a href="#"><box-icon name='linkedin-square' type='logo' ></box-icon></a>
-        </div>
+        <h1><span class="glow">Brandon</span> Corbin</h1>
+        <h2>I am a Software <span class="glow">Developer</span></h2>
       </div>
     </section>
 
@@ -58,30 +56,80 @@
         <h1>Latest <span class="glow">Projects</span></h1>
         <ul id="project-list">
           <li class="project-tile">
-            <img src="Images/AeroBeats.PNG" alt="Product Landing Page">
+            <a href="https://product-landing-page-sage.vercel.app/" target="_blank">
+              <img src="Images/AeroBeats.PNG" alt="Product Landing Page">
+            </a>
           </li>
           <li class="project-tile">
-            <img src="Images/Galactic_Glide.PNG" alt="Product Landing Page">
+            <a href="https://github.com/FSanchez-UF/Galactic-Glide" target="_blank">
+              <img src="Images/Galactic_Glide.PNG" alt="Product Landing Page">
+            </a>
           </li>
           <li class="project-tile">
-            <img src="Images/Compiler.jpg" alt="Product Landing Page">
+            <a href="#" target="_blank">
+              <img src="Images/Compiler.jpg" alt="Product Landing Page">
+            </a>
           </li>
           <li class="project-tile">
-            <img src="Images/Superball.PNG" alt="Product Landing Page">
+            <a href="https://github.com/clt313/SuperballVR" target="_blank">
+              <img src="Images/Superball.PNG" alt="Product Landing Page">
+            </a>
           </li>
           <li class="project-tile">
-            <img src="Images/Memory_Management.jpg" alt="Product Landing Page">
+            <a href="https://github.com/BCorbin825/Memory_Manager" target="_blank">
+              <img src="Images/Memory_Management.jpg" alt="Product Landing Page">
+            </a>
           </li>
           <li class="project-tile">
-            <img src="Images/Clubfinder.png" alt="Product Landing Page">
+            <a href="https://github.com/FSanchez-UF/ClubFinder" target="_blank">
+              <img src="Images/Clubfinder.png" alt="Product Landing Page">
+            </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!------ Skills Section ------>
+    <section id="skills">
+      <div id="skills-content">
+        <h1>My <span class="glow">Skills</span></h1>
+        <ul id="skills-grid">
+          <li>
+            <p>To be added...</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!------ Contact Section ------>
+    <section id="contact">
+      <h1><span class="glow">Contact</span> Me</h1>
+      <p>To be added...</p>
+    </section>
+
+    <!------ Contact Section ------>
+    <section id="links">
+      <div id="links-content">
+        <h3>Brandon Corbin</h3>
+        <p>Checkout my social media for more information</p>
+        <div id="link-icons">
+          <a href="https://www.linkedin.com/in/brandon-corbin-a20098224/" target="_blank">
+            <i class="bx bxl-linkedin-square icon"></i>
+          </a>
+          <a href="https://github.com/BCorbin825" target="_blank">
+            <i class="bx bxl-github icon"></i>
+          </a>
+          <a href="https://www.freecodecamp.org/Bcorbin" target="_blank">
+            <i class="fab fa-free-code-camp icon"></i>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-------- Scripts -------->
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
       AOS.init();
     </script>
