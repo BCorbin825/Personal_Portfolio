@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     color: white;
-  }
+}
   
 body {
     background: radial-gradient(50% 50% at 50% 50%, #1f2435 0%, #1d2635 100%);
@@ -38,8 +38,6 @@ a {
 
 /* ------------- Top Bar Section ------------- */
 header {
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +45,7 @@ header {
     background: rgba(29, 38, 53, 0.1);
     backdrop-filter: blur(5px);
     color: white;
-    width: 100%;
+    width: 100vw;
     padding: 0.5vh 0;
     z-index: 9999;
 }
@@ -220,8 +218,8 @@ header h1 {
 .project-tile {
     display: inline-block;
     list-style: none;
-    width: 600px;
-    height: 338px;
+    width: 31.25vw;
+    height: 31.3vh;
 }
 
 #project-list li img {
