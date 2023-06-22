@@ -26,6 +26,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -279,7 +283,7 @@ header h1 {
 }
 
 #project-content h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     padding-bottom: 3vh;
 }
 
@@ -292,8 +296,8 @@ header h1 {
 .project-tile {
     display: inline-block;
     list-style: none;
-    width: 31.25vw;
-    height: 31.3vh;
+    width: 550px;
+    height: 325px;
 }
 
 #project-list li img {
