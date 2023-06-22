@@ -42,13 +42,12 @@ function formatPhoneNumber(input) {
   // Remove any non-digit characters from the input value
   var phoneNumber = input.value.replace(/\D/g, '');
 
-  // Apply formatting based on the length of the phone number
-  if (phoneNumber.length > 3 && phoneNumber.length <= 6) {
-    phoneNumber = phoneNumber.replace(/(\d{3})(\d{1,3})/, '$1-$2');
-  } else if (phoneNumber.length > 6) {
-    phoneNumber = phoneNumber.replace(/(\d{3})(\d{3})(\d{1,4})/, '($1) $2-$3');
-  }
+  // Remove leading "+1" if present
+  phoneNumber = phoneNumber.replace(/^1/, '');
 
-  // Set the formatted value back into the input
+  // Apply formatting using a single regular expression
+  phoneNumber = phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+
+  // Set the formatted value back into the input, including the "+1" prefix
   input.value = phoneNumber;
 }
