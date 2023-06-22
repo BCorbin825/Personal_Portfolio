@@ -2,9 +2,10 @@
 
 /* ---------------------------------- Variables ---------------------------------- */
 :root {
-    --highlight-text-color: #94caf6;
+    --highlight-text-color: #389ff3;
     --glow-color: rgba(6, 124, 242, 1);
     --main-color: rgb(0, 18, 32);
+    --focus-color: rgb(1, 35, 60);
 }
 
 
@@ -40,6 +41,62 @@ a {
 
 .nav-link.highlight {
     color: var(--highlight-text-color);
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin-top: 1.5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 100%;
+    background: var(--highlight-text-color);
+    border: 0.2rem solid var(--highlight-text-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--highlight-text-color);
+}
+
+.btn-box .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--highlight-text-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
 }
 
 /* ------------- Top Bar Section ------------- */
@@ -116,11 +173,38 @@ header h1 {
     font-size: 2.3rem;
 }
 
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
+#home-btns {
+    display: flex;
+    gap: 3rem;
+}
+
+#home-btns .btn-box {
+    margin-top: 2rem;
+    height: 4.8rem;
+}
+
+#home-btns .btn-box .btn {
+    width: 15rem;
+    height: 100%;
+    margin-top: 0;
+}
+
+#home-btns .talk .btn {
+    color: var(--highlight-text-color);
+    background: var(--main-color);
+}
+
+
+#home-btns .talk .btn:hover {
+    color: var(--main-color);
+}
+
+#home-btns .talk .btn::before {
+    background: var(--main-color);
+}
+
+#home-btns .talk .btn:hover::before {
+    background: var(--highlight-text-color);
 }
 
 
@@ -311,6 +395,12 @@ header h1 {
     border: 0.2rem solid var(--highlight-text-color);
 }
 
+.contact-content form .input-box .input-field input:focus,
+.contact-content form .textarea-field textarea:focus {
+    outline: none;
+    background-color: var(--focus-color);
+}
+
 .contact-content form .input-box .input-field input::placeholder,
 .contact-content form .textarea-field textarea::placeholder {
     color: white;
@@ -320,61 +410,15 @@ header h1 {
     margin-top: 1.3rem;
 }
 
-.btn-box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 5rem;
-}
-
-.btn-box .btn {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    height: 100%;
-    margin-top: 1rem;
-    background: var(--highlight-text-color);
-    border: 0.2rem solid var(--highlight-text-color);
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    color: var(--main-color);
-    z-index: 1;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-box .btn:hover {
-    color: var(--highlight-text-color);
-}
-
-.btn-box .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--highlight-text-color);
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.btn-box .btn:hover::before {
-    content: "";
+/* .contact form .focus {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
-    z-index: -1;
-}
+    background: red;
+    border-radius: 0.6rem;
+} */
 
 .heading {
     font-size: 5rem;
