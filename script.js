@@ -7,8 +7,9 @@ window.addEventListener('load', function() {
     window.scrollTo(0, 0);
 });
 
-// Handles highlighting the current section
+
 window.addEventListener('scroll', () => {
+// Handles highlighting the current section
     const scrollPosition = window.scrollY;
     const viewportHeight = window.innerHeight;
   

@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    scroll-behavior: smooth;
 }
   
 body {
@@ -47,7 +48,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background: rgba(0, 18, 32, 0.1);
+    background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(5px);
     color: white;
     width: 100vw;
