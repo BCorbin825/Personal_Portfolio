@@ -352,6 +352,7 @@ header h1 {
 
 .project-description p {
     font-size: 1.6rem;
+    font-weight: 600;
     text-align: center;
 }
 
