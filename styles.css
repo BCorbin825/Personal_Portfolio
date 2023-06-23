@@ -308,7 +308,7 @@ header h1 {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: filter 0.5s;
+    transition: 0.5s;
 }
 
 .project-description {
@@ -330,6 +330,10 @@ header h1 {
     cursor: pointer;
 }
 
+.project-icon a {
+    display: flex;
+}
+
 .project-icon::before {
     position: absolute;
     content: "";
@@ -344,6 +348,7 @@ header h1 {
 
 .project-tile:hover img {
     filter: brightness(15%);
+    transform: scale(1.05);
 }
 
 .project-tile:hover .project-description {
