@@ -2,10 +2,10 @@
 /* ------------------------------ Constants ------------------------------ */
 
 
-/* ---------------------------- Dynamic code ---------------------------- */
-window.addEventListener('load', function() {
-    window.scrollTo(0, 0);
-});
+// /* ---------------------------- Dynamic code ---------------------------- */
+// window.addEventListener('load', function() {
+//     window.scrollTo(0, 0);
+// });
 
 
 window.addEventListener('scroll', () => {
