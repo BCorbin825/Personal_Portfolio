@@ -11,6 +11,39 @@
 window.addEventListener('scroll', highlightSectionNav);
 window.addEventListener('load', highlightSectionNav);
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the form element
+  const form = document.querySelector("form");
+
+  // Add submit event listener to the form
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // If submission is successful, reset the form
+        form.reset();
+        alert("Your message has been sent!");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        // Handle errors here if needed
+      });
+  });
+});
+
 /* --------------------------- Functions --------------------------- */
 function formatPhoneNumber(input) {
   // Remove any non-digit characters from the input value
