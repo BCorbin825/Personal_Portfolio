@@ -396,11 +396,28 @@ header h1 {
 
 #skills-grid {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2vw 3vw;
 }
 
-#skills-grid li p {
-    font-size: 2rem;
+#skills-grid li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#skills-grid li img {
+    width: auto;
+    height: 180px;
+}
+
+#skills-grid li:nth-last-child(-n + 2) {
+    grid-column: auto; /* Set to auto to reset column span */
+    margin: 0 auto; /* Center the last two items horizontally */
+  }
 
 
 /* ------------- Contact Section ------------- */
