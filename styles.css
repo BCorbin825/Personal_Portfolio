@@ -387,11 +387,16 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 #skills-content h1 {
     font-size: 5rem;
     padding-bottom: 3vh;
+}
+
+#skills-diagram {
+    height: 60%;
 }
 
 #skills-grid {
@@ -400,7 +405,7 @@ header h1 {
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 2vw 3vw;
+    gap: 2vw 5vw;
 }
 
 #skills-grid li {
@@ -411,7 +416,7 @@ header h1 {
 
 #skills-grid li img {
     width: auto;
-    height: 180px;
+    height: 150px;
 }
 
 #skills-grid li:nth-last-child(-n + 2) {
