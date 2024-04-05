@@ -266,44 +266,36 @@ header h1 {
 
 /* ------------ Projects Section ------------ */
 #projects {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-image: url('Images/Backgrounds/background4.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #project-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1600px;
+    width: 70%;
 }
 
-#project-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
-}
-
-.project-tile {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+.project {
     width: 25vw;
     height: 15vw;
+    max-height: 325px;
 }
 
-#project-list li img {
-    max-width: 100%;
+.project-img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
     transition: 0.5s;
+}
+
+.slick-slide > div {
+    margin: 8px;
 }
 
 .project-description {
@@ -343,7 +335,7 @@ header h1 {
 
 .project-tile:hover img {
     filter: brightness(15%);
-    transform: scale(1.05);
+    /* transform: scale(1.1); */
 }
 
 .project-tile:hover .project-description {

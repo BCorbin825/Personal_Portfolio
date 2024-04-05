@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-------- Top bar -------->
@@ -66,21 +68,34 @@
     <section id="projects">
       <div id="project-content" >
         <h1 class="heading" data-aos="zoom-in" data-aos-duration="1500">Latest <span class="glow">Projects</span></h1>
-        <ul id="project-list">
-          <li class="project-tile" data-aos="fade-right" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/AeroBeats.PNG" alt="Product Landing Page">
-            <div class="project-description">
+        <ul id="project-list" data-aos="fade-up" data-aos-duration="1500">
+          <li class="project" >
+            <img class="project-img" src="Images/Projects_Thumbnails/DnD_Pathing.PNG" alt="D&D Map Pathing">
+            <!-- <div class="project-description">
+              <p>Uses A* shortest path algorithm to find and display the shortest path between 
+                  two points on a DnD map either by only land, or by water and land.
+              </p>
+              <div class="project-icon">
+                <a href="https://dnd-map-pathing.vercel.app/" target="_blank">
+                  <i class='bx bx-link-external'></i>
+                </a>
+              </div>
+            </div> -->
+          </li>
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/AeroBeats.PNG" alt="Product Landing Page">
+            <!-- <div class="project-description">
               <p>Sample product landing page for a fake brand of headphones using html/css/javascript</p>
               <div class="project-icon">
                 <a href="https://product-landing-page-sage.vercel.app/" target="_blank">
                   <i class='bx bx-link-external'></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </li>
-          <li class="project-tile" data-aos="fade-right" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/Galactic_Glide.PNG" alt="Galactic-Glide Project">
-            <div class="project-description">
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/Galactic_Glide.PNG" alt="Galactic-Glide Project">
+            <!-- <div class="project-description">
               <p>2D side-scrolling game that takes place in a futuristic, interstellar setting. Built using Processing,
                 a Java sketchbook.
               </p>
@@ -89,54 +104,54 @@
                   <i class='bx bx-link-external'></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </li>
-          <li class="project-tile" data-aos="fade-left" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/Compiler.jpg" alt="Compiler Project">
-            <div class="project-description">
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/Compiler.jpg" alt="Compiler Project">
+            <!-- <div class="project-description">
               <p>A custom language compiler built in Java which implemented a scanner, parser, type checker,
-                 and code generator.
+                  and code generator.
               </p>
-            </div>
+            </div> -->
           </li>
-          <li class="project-tile" data-aos="fade-right" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/Superball.PNG" alt="Superball VR Project">
-            <div class="project-description">
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/Superball.PNG" alt="Superball VR Project">
+            <!-- <div class="project-description">
               <p>Superball VR is a new and unique take on the classic games of tennis and volleyball. 
-                 It combines the two in a virtual reality setting.
+                  It combines the two in a virtual reality setting.
               </p>
               <div class="project-icon">
                 <a href="https://github.com/clt313/SuperballVR" target="_blank">
                   <i class='bx bx-link-external'></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </li>
-          <li class="project-tile" data-aos="fade-left" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/Clubfinder.png" alt="Clubfinder Project">
-            <div class="project-description">
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/Clubfinder.png" alt="Clubfinder Project">
+            <!-- <div class="project-description">
               <p>A webpage developed using the MERN stack, to provide students at UF a quick and easy way to 
-                 join new clubs.
+                  join new clubs.
               </p>
               <div class="project-icon">
                 <a href="https://github.com/FSanchez-UF/ClubFinder" target="_blank">
                   <i class='bx bx-link-external'></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </li>
-          <li class="project-tile" data-aos="fade-left" data-aos-duration="1500">
-            <img src="Images/Projects_Thumbnails/Memory_Management.jpg" alt="Memory Management Project">
-            <div class="project-description">
+          <li class="project">
+            <img class="project-img" src="Images/Projects_Thumbnails/Memory_Management.jpg" alt="Memory Management Project">
+            <!-- <div class="project-description">
               <p>A custom memory manager built in C++ which provides various function for memory management including, 
-                 memory initialization, allocating new memory, and freeing memory.
+                  memory initialization, allocating new memory, and freeing memory.
               </p>
               <div class="project-icon">
                 <a href="https://github.com/BCorbin825/Memory_Manager" target="_blank">
                   <i class='bx bx-link-external'></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </li>
         </ul>
       </div>
@@ -204,8 +219,20 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script>
-      AOS.init();
+    <script>AOS.init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#project-list').slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          rows: 2,
+          dots: true
+        });
+      });
     </script>
 </body>
 </html>
